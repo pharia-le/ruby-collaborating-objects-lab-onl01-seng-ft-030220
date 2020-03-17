@@ -17,6 +17,7 @@ class Song
     else
       artist = Artist.new(name)
       self.artist = artist
+      artist
     end
   end
   
