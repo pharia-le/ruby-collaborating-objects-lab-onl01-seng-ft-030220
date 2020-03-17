@@ -15,7 +15,7 @@ class Song
     if all_find(name)
       all_find(name)
     else
-      artist = Artist.new(name)
+      artist = Artist.find_or_create_by_name(name)
       self.artist = artist
       artist
     end
