@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   
   @@all = []
@@ -12,6 +14,7 @@ class Song
   def artist_name=(name)
     if all_find(name)
       all_find(name)
+      binding.pry
     else
       artist = Artist.new(name)
       self.artist = artist
