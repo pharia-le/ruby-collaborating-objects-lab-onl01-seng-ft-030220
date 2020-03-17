@@ -10,7 +10,7 @@ class Song
   end
     
   def artist_name=(name)
-    if @@all_find(name)
+    if all_find(name)
       self.all_find(name)
     else
       artist = self.new(name)
