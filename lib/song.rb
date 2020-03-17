@@ -19,6 +19,7 @@ class Song
       self.artist = artist
       artist
     end
+    binding.pry
   end
   
   def all_find(name)
