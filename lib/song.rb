@@ -12,9 +12,9 @@ class Song
   end
     
   def artist_name=(name)
+    binding.pry
     if all_find(name)
       all_find(name)
-      binding.pry
     else
       artist = Artist.new(name)
       self.artist = artist
